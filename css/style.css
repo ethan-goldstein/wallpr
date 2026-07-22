@@ -61,7 +61,11 @@ img { max-width: 100%; display: block; }
 .panels {
   flex: 1;
   display: flex;
+  align-items: center;
   gap: clamp(0.5rem, 1vw, 0.85rem);
+  width: 100%;
+  max-width: min(1000px, 88vw);
+  margin: 0 auto;
   padding: 0 clamp(1.25rem, 3vw, 2.5rem);
   min-height: 0;
 }
@@ -69,6 +73,7 @@ img { max-width: 100%; display: block; }
 .panel {
   position: relative;
   flex: 1;
+  height: min(52dvh, 480px);
   border-radius: 14px;
   overflow: hidden;
   background-image: linear-gradient(180deg, rgba(10,12,17,0) 45%, rgba(10,12,17,0.88) 100%), var(--cover);
@@ -141,9 +146,11 @@ img { max-width: 100%; display: block; }
   .panels {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, min(30dvh, 290px));
+    align-content: center;
+    max-width: none;
   }
-  .panel, .panel:hover { flex: none; }
+  .panel, .panel:hover { flex: none; height: 100%; }
   .foot-note { display: none; }
 }
 
