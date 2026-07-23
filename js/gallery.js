@@ -72,6 +72,7 @@
       img.src = w.preview;
       img.alt = w.title + " — " + cat.title + " wallpaper preview";
       img.loading = "lazy";
+      img.draggable = false;
       thumb.appendChild(img);
 
       const meta = document.createElement("div");
@@ -106,6 +107,12 @@
       grid.appendChild(card);
     });
   }
+
+  // Block the right-click/long-press menu on previews (deterrent only —
+  // real protection is that full-res files are never served by this site).
+  document.addEventListener("contextmenu", function (e) {
+    if (e.target.closest(".wall-thumb, .gal-hero")) e.preventDefault();
+  });
 
   // Load lemon.js only when a Lemon Squeezy link is actually on the page.
   if (needsLemon) {
