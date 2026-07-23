@@ -292,6 +292,31 @@ img { max-width: 100%; display: block; }
 .gal-foot a:hover { color: var(--ink); }
 
 /* ============================================================
+   custom order form
+   ============================================================ */
+.custom-hero { min-height: 28dvh; background-image: linear-gradient(180deg, rgba(10,12,17,0.55) 0%, rgba(10,12,17,0.45) 55%, var(--bg) 100%), radial-gradient(120% 120% at 20% 0%, #1d2432 0%, var(--bg) 70%); }
+
+.custom-form { max-width: 620px; display: flex; flex-direction: column; gap: 1.2rem; padding-bottom: 3rem; }
+.form-row { display: flex; flex-direction: column; gap: 0.45rem; }
+.form-row label { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-dim); }
+.form-row .hint { text-transform: none; letter-spacing: 0.02em; }
+.form-row input, .form-row select, .form-row textarea {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  font: 400 0.95rem/1.5 var(--sans);
+  padding: 0.75rem 0.9rem;
+  outline: none;
+  transition: border-color 0.25s;
+}
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus { border-color: rgba(233,230,223,0.4); }
+.form-row textarea { resize: vertical; min-height: 8rem; }
+.form-submit { align-self: flex-start; padding: 0.8rem 1.6rem; }
+.form-note { color: var(--ink-dim); font-size: 0.78rem; line-height: 1.6; max-width: 46ch; }
+.form-note a { color: var(--ink); }
+
+/* ============================================================
    legal page
    ============================================================ */
 .legal-page { max-width: 760px; margin: 0 auto; padding: clamp(1.5rem, 4vw, 3rem) 1.5rem 4rem; }
