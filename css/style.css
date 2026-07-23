@@ -47,6 +47,8 @@ img { max-width: 100%; display: block; }
 }
 .wordmark .dot { color: var(--accent); }
 
+.topbar-right { display: flex; align-items: center; gap: 1.4rem; min-width: 0; }
+
 .tagline {
   color: var(--ink-dim);
   font-size: clamp(0.7rem, 1.1vw, 0.85rem);
@@ -56,6 +58,20 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.custom-cta {
+  flex-shrink: 0;
+  border: 1px solid var(--accent);
+  border-radius: 99px;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.1rem;
+  transition: background 0.25s, transform 0.15s;
+}
+.custom-cta:hover { background: var(--accent); transform: translateY(-1px); }
 
 /* ---------- category panels ---------- */
 .panels {
