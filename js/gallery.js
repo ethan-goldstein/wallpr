@@ -48,7 +48,7 @@
   const strong = document.createElement("strong");
   strong.textContent = cat.bundle.label;
   const span = document.createElement("span");
-  span.textContent = "Every " + cat.title.toLowerCase() + " wallpaper, one download — $" + cat.bundle.price.toFixed(2);
+  span.textContent = "Choose any 4 wallpapers from this collection — $" + cat.bundle.price.toFixed(2) + ". Tell us your picks at checkout.";
   copy.appendChild(strong);
   copy.appendChild(span);
   bar.appendChild(copy);

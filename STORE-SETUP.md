@@ -17,9 +17,13 @@ use Stripe Managed Payments, or fall back to **Payhip** (5% fee) or **Gumroad**
 ## 2. Create the store + products
 
 For each of the 4 categories create:
-- **1 bundle product** — e.g. "The Sports Pack" ($9.99): a single .zip containing every
-  full-res wallpaper in that category (both iPhone 1290×2796 and desktop 3840×2160
-  versions if you have them).
+- **1 pack product** — e.g. "The Sports Pack" ($10): buyer **chooses any 4 wallpapers**
+  from that category. Setup: add a REQUIRED custom text field at checkout labeled
+  "Your 4 wallpaper picks (titles from the site)". Fulfillment is manual: when an
+  order arrives, email the buyer their 4 full-res files (from `originals/`), or
+  attach a small "how to redeem" PDF as the product file telling them their picks
+  arrive by email within 24h. (The full-category zips in `originals/packs/` are NOT
+  the pick-4 product — keep those for a possible future "complete collection" tier.)
 - **1 product per individual wallpaper** ($3.99): the full-res file(s).
 
 Upload the FULL-RESOLUTION files there and only there — never into this repo
