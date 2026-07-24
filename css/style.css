@@ -80,7 +80,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: clamp(0.5rem, 1vw, 0.85rem);
   width: 100%;
-  max-width: min(1000px, 88vw);
+  max-width: min(1150px, 90vw);
   margin: 0 auto;
   padding: 0 clamp(1.25rem, 3vw, 2.5rem);
   min-height: 0;
@@ -105,10 +105,11 @@ img { max-width: 100%; display: block; }
   will-change: flex;
 }
 
-.panel-sports    { --cover: url("../assets/covers/sports.webp?v=7"); }
-.panel-places    { --cover: url("../assets/covers/places.webp?v=7"); }
-.panel-lifestyle { --cover: url("../assets/covers/lifestyle.webp?v=7"); }
-.panel-animals   { --cover: url("../assets/covers/animals.webp?v=7"); }
+.panel-sports    { --cover: url("../assets/covers/sports.webp?v=8"); }
+.panel-places    { --cover: url("../assets/covers/places.webp?v=8"); }
+.panel-lifestyle { --cover: url("../assets/covers/lifestyle.webp?v=8"); }
+.panel-animals   { --cover: url("../assets/covers/animals.webp?v=8"); }
+.panel-wealth    { --cover: url("../assets/covers/wealth.webp?v=8"); }
 
 .panel:hover, .panel:focus-visible {
   flex: 2.4;
@@ -162,11 +163,12 @@ img { max-width: 100%; display: block; }
   .panels {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, min(30dvh, 290px));
+    grid-template-rows: repeat(3, min(19dvh, 190px));
     align-content: center;
     max-width: none;
   }
   .panel, .panel:hover { flex: none; height: 100%; }
+  .panel-wealth { grid-column: span 2; }
   .foot-note { display: none; }
 }
 
