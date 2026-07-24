@@ -2,7 +2,7 @@
 
 Minimal one-page hero storefront for impasto-painted wallpapers (iPhone + desktop digital downloads). Static HTML/CSS/JS — no build step, no backend, no secrets.
 
-**Live:** https://ethan-goldstein.github.io/wallpr/
+**Live:** https://wallpr.us/
 
 ## Structure
 
