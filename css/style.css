@@ -105,10 +105,10 @@ img { max-width: 100%; display: block; }
   will-change: flex;
 }
 
-.panel-sports    { --cover: url("../assets/covers/sports.webp"); }
-.panel-places    { --cover: url("../assets/covers/places.webp"); }
-.panel-lifestyle { --cover: url("../assets/covers/lifestyle.webp"); }
-.panel-animals   { --cover: url("../assets/covers/animals.webp"); }
+.panel-sports    { --cover: url("../assets/covers/sports.webp?v=7"); }
+.panel-places    { --cover: url("../assets/covers/places.webp?v=7"); }
+.panel-lifestyle { --cover: url("../assets/covers/lifestyle.webp?v=7"); }
+.panel-animals   { --cover: url("../assets/covers/animals.webp?v=7"); }
 
 .panel:hover, .panel:focus-visible {
   flex: 2.4;
