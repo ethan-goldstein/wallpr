@@ -45,6 +45,15 @@ const CATEGORIES = {
 
 const WALLPAPERS = [
   {
+    id: "wealth-07",
+    title: "Gilded Vault",
+    category: "wealth",
+    preview: "assets/previews/wealth-07.jpg",
+    sizes: ["Desktop"],
+    price: 3.99,
+    buyUrl: "",
+  },
+  {
     id: "places-01",
     title: "Santorini Gold",
     category: "places",
