@@ -2,6 +2,10 @@
    The page shell sets <body data-category="..."> */
 
 (function () {
+  // Bump this whenever preview images are regenerated in bulk (watermark
+  // changes, etc.) so browsers/CDN don't keep serving a cached copy at the
+  // same URL — same convention as the ?v= on covers and products.js itself.
+  const PREVIEW_VERSION = 2;
   const slug = document.body.dataset.category;
   const cat = CATEGORIES[slug];
   if (!cat) return;
@@ -69,7 +73,7 @@
       const thumb = document.createElement("div");
       thumb.className = "wall-thumb";
       const img = document.createElement("img");
-      img.src = w.preview;
+      img.src = w.preview + "?v=" + PREVIEW_VERSION;
       img.alt = w.title + " — " + cat.title + " wallpaper preview";
       img.loading = "lazy";
       img.draggable = false;
